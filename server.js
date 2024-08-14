@@ -12,9 +12,10 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 //route for user
+app.use(express.static(path.join(__dirname, './client/build')));
 app.use("/api/v1/users", require('./routes/userRoute'));
 
-app.use(express.static(path.join(__dirname, './client/build')));
+
 app.get("*", function(req, res){
     res.sendFile(path.join(__dirname, './client/build/index.html'));
 })
