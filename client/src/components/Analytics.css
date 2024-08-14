@@ -1,0 +1,78 @@
+/* Analytics Component */
+.analytics-container {
+    padding: 20px;
+    min-height: calc(100vh - 80px); /* Ensures content does not overlap with footer */
+    background-color: #f7f9fc;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    font-weight: bold;
+    background-color: #f0f2f5;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .progress-charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .progress-charts .ant-progress-circle {
+    margin: 0 10px;
+  }
+  
+  .progress-bars {
+    margin-bottom: 20px;
+  }
+  
+  .category-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .category-section h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .category-section .card {
+    width: 48%;
+  }
+  
+  .category-section .card h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .graph {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .progress-charts {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .category-section {
+      flex-direction: column;
+    }
+  
+    .category-section .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
