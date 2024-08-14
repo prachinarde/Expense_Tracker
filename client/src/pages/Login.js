@@ -19,7 +19,7 @@ const Login = () => {
 
         } catch (error) {
             setLoading(false);
-            message.error("Something went wrong");
+            message.error("Unable to Login");
         }
 
     };
